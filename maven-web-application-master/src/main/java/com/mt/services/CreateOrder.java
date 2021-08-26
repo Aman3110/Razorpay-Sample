@@ -17,12 +17,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.razorpay.*;
 
 
-@Controller
-@RequestMapping(value="/ordercreate")
 
 public class CreateOrder {
-	@RequestMapping(value = "/postCreateOrderDetails", method = RequestMethod.POST)
-	@ResponseBody
+	
 	JSONObject create_json(HttpServletRequest request, HttpServletResponse response, HttpSession httpSession)
 			throws RazorpayException 
 	{
